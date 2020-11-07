@@ -2,6 +2,8 @@
 
 ## Pipeline Example
 
+### RAW Repository
+
 ```yaml
 kind: pipeline
 type: docker
@@ -14,7 +16,8 @@ steps:
     url: http://your-nexus-server.example
     username: admin
     password: your-password
-    repository: raw
+    repository_type: raw
+    repository: my-repo
     asset_file: myfile.txt
     remote_path: foo/bar/zoz
     remote_filename: myfile.txt
