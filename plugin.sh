@@ -16,7 +16,7 @@ raw_repository() {
         -H "accept: application/json" \
         -H "Content-Type: multipart/form-data" \
         -F "raw.directory=${PLUGIN_REMOTE_PATH}" \
-        -F "raw.asset1=@${PLUGIN_ASSET_FILE}";type=${PLUGIN_ASSET_MIMETYPE} \
+        -F "raw.asset1=@${PLUGIN_ASSET_FILE};type=${PLUGIN_ASSET_MIMETYPE}" \
         -F "raw.asset1.filename=${PLUGIN_REMOTE_FILENAME}"
 }
 
