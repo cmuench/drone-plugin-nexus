@@ -20,6 +20,7 @@ steps:
     repository_type: raw
     repository: my-repo
     asset_file: myfile.txt
+    mimetype: "text/plain" # options -> if empty we will try to detect
     remote_path: foo/bar/zoz
     remote_filename: myfile.txt
 ```

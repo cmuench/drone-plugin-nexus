@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk -Uuv add curl ca-certificates
+RUN apk -Uuv add curl ca-certificates file
 
 ADD plugin.sh /bin/
 RUN chmod +x /bin/plugin.sh
