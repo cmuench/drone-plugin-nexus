@@ -14,6 +14,7 @@ steps:
   image: cmuench/drone-nexus
   settings:
     url: http://your-nexus-server.example
+    curl_options: -v  # optional
     username: admin
     password: your-password
     repository_type: raw

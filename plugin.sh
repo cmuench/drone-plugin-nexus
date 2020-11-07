@@ -1,7 +1,7 @@
 #!/bin/sh
 
 raw_repository() {
-    curl -v -u ${PLUGIN_USERNAME}:${PLUGIN_PASSWORD} \
+    curl ${PLUGIN_CURL_OPTIONS} -u ${PLUGIN_USERNAME}:${PLUGIN_PASSWORD} \
         "${PLUGIN_URL}/service/rest/v1/components?repository=${PLUGIN_REPOSITORY}" \
         -H "accept: application/json" \
         -H "Content-Type: multipart/form-data" \
